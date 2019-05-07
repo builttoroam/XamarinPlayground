@@ -1,11 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ios="clr-namespace:UIKit;assembly=Xamarin.iOS;targetPlatform=iOS"
+             xmlns:iosSystem="clr-namespace:System;assembly=Xamarin.iOS;targetPlatform=iOS"
              xmlns:androidWidget="clr-namespace:Android.Widget;assembly=Mono.Android;targetPlatform=Android"
              xmlns:androidLocal="clr-namespace:Embedding.Droid;assembly=Embedding.Android;targetPlatform=Android"
+             xmlns:iOSLocal="clr-namespace:Embedding.iOS;assembly=Embedding.iOS;targetPlatform=Android"
              x:Class="Embedding.MainPage">
 
   <StackLayout>
+
     <Label Text="Welcome to Xamarin.Forms!"
            HorizontalOptions="Center"
            VerticalOptions="Start" />
@@ -15,6 +19,16 @@
                              StepSize="1"
                              View.HorizontalOptions="{Binding HorizontalLayoutOptions, Mode=OneWay}"
                              View.VerticalOptions="{Binding VerticalLayoutOptions, Mode=OneWay}" />
+
+    <ios:UISegmentedControl View.HorizontalOptions="{Binding HorizontalLayoutOptions, Mode=OneWay}"
+                            View.VerticalOptions="{Binding VerticalLayoutOptions, Mode=OneWay}"
+                            x:Arguments="{x:Static iOSLocal:AppDelegate.Segments}"
+                            Momentary="False">
+      <!--MK Can't work out how to select other than first segment-->
+      <ios:UISegmentedControl.SelectedSegment>
+        <iosSystem:nint x:Arguments="2" />
+      </ios:UISegmentedControl.SelectedSegment>
+    </ios:UISegmentedControl>
 
     <Button Text="Change alignment options"
             Clicked="HandleNativeViewAlignmentChange"
