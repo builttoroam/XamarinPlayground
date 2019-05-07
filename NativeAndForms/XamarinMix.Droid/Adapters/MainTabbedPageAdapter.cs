@@ -37,13 +37,6 @@ namespace XamarinMix.Droid.Adapters
             if (position == 1)
             {
                 return new CustomFragment(fragmentManager);
-                //var settingSupportFragment = new SettingsPage().CreateSupportFragment(Application.Context);
-
-                //fragmentManager.BeginTransaction()
-                //               .Replace(Resource.Id.settings_page_fragment_placeholder, settingSupportFragment)
-                //               .Commit();
-
-                //return settingSupportFragment;
             }
 
             return null;
