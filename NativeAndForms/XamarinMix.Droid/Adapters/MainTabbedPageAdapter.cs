@@ -12,14 +12,17 @@ namespace XamarinMix.Droid.Adapters
 {
     public class MainTabbedPageAdapter : FragmentStatePagerAdapter
     {
+        private readonly FragmentManager fragmentManager;
+
         public MainTabbedPageAdapter(IntPtr javaReference, JniHandleOwnership transfer)
             : base(javaReference, transfer)
         {
         }
 
-        public MainTabbedPageAdapter(FragmentManager fm)
-            : base(fm)
+        public MainTabbedPageAdapter(FragmentManager fragmentManager)
+            : base(fragmentManager)
         {
+            this.fragmentManager = fragmentManager;
         }
 
         public override int Count { get; } = 2;
@@ -30,9 +33,17 @@ namespace XamarinMix.Droid.Adapters
             {
                 return new MapFragment();
             }
+
             if (position == 1)
             {
-                return new SettingsPage().CreateSupportFragment(Application.Context);
+                return new CustomFragment(fragmentManager);
+                //var settingSupportFragment = new SettingsPage().CreateSupportFragment(Application.Context);
+
+                //fragmentManager.BeginTransaction()
+                //               .Replace(Resource.Id.settings_page_fragment_placeholder, settingSupportFragment)
+                //               .Commit();
+
+                //return settingSupportFragment;
             }
 
             return null;

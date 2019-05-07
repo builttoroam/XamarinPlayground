@@ -58,6 +58,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapters\MainTabbedPageAdapter.cs" />
+    <Compile Include="Fragments\CustomFragment.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Fragments\MapFragment.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
@@ -108,6 +111,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\menu\bottom_navigation_main.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\custom_layout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
