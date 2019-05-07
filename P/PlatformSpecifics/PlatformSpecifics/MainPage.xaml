@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PlatformSpecifics"
+             x:Class="PlatformSpecifics.MainPage"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core">
+
+  <StackLayout>
+    <Button Text="With"
+            BackgroundColor="Orange"
+            android:Button.UseDefaultPadding="True"
+            android:Button.UseDefaultShadow="True" />
+    <Button Text="Without"
+            BackgroundColor="Orange"
+            android:Button.UseDefaultPadding="False"
+            android:Button.UseDefaultShadow="False" />
+
+    <Label Text="Welcome to Xamarin.Forms!"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+  </StackLayout>
+</ContentPage>
