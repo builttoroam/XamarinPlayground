@@ -8,10 +8,16 @@
   <StackLayout>
     <Label Text="Welcome to Xamarin.Forms!"
            HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+           VerticalOptions="Start" />
 
-    <androidWidget:RatingBar NumStars="5"
+    <androidWidget:RatingBar x:Arguments="{x:Static androidLocal:MainActivity.Instance}"
+                             NumStars="5"
                              StepSize="1"
-                             x:Arguments="{x:Static androidLocal:MainActivity.Instance}" />
+                             View.HorizontalOptions="{Binding HorizontalLayoutOptions, Mode=OneWay}"
+                             View.VerticalOptions="{Binding VerticalLayoutOptions, Mode=OneWay}" />
+
+    <Button Text="Change alignment options"
+            Clicked="HandleNativeViewAlignmentChange"
+            VerticalOptions="End" />
   </StackLayout>
 </ContentPage>
