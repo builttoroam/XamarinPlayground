@@ -331,4 +331,4 @@ ASALocalRun/
 
 
 # Designer Files
-.designer.cs
+*.designer.cs
