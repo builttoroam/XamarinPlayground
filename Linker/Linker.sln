@@ -10,18 +10,30 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		DebugLinkSdk|Any CPU = DebugLinkSdk|Any CPU
+		DebugLinkSdkAndUser|Any CPU = DebugLinkSdkAndUser|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{52DF25FD-F683-4256-99F2-2CBC8CD6B4E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{52DF25FD-F683-4256-99F2-2CBC8CD6B4E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52DF25FD-F683-4256-99F2-2CBC8CD6B4E2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{52DF25FD-F683-4256-99F2-2CBC8CD6B4E2}.DebugLinkSdk|Any CPU.ActiveCfg = DebugLinkSdk|Any CPU
+		{52DF25FD-F683-4256-99F2-2CBC8CD6B4E2}.DebugLinkSdk|Any CPU.Build.0 = DebugLinkSdk|Any CPU
+		{52DF25FD-F683-4256-99F2-2CBC8CD6B4E2}.DebugLinkSdk|Any CPU.Deploy.0 = DebugLinkSdk|Any CPU
+		{52DF25FD-F683-4256-99F2-2CBC8CD6B4E2}.DebugLinkSdkAndUser|Any CPU.ActiveCfg = DebugLinkSdkAndUser|Any CPU
+		{52DF25FD-F683-4256-99F2-2CBC8CD6B4E2}.DebugLinkSdkAndUser|Any CPU.Build.0 = DebugLinkSdkAndUser|Any CPU
+		{52DF25FD-F683-4256-99F2-2CBC8CD6B4E2}.DebugLinkSdkAndUser|Any CPU.Deploy.0 = DebugLinkSdkAndUser|Any CPU
 		{52DF25FD-F683-4256-99F2-2CBC8CD6B4E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52DF25FD-F683-4256-99F2-2CBC8CD6B4E2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{52DF25FD-F683-4256-99F2-2CBC8CD6B4E2}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{48A6F6B4-3641-48B2-948C-8BA0E2A426B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{48A6F6B4-3641-48B2-948C-8BA0E2A426B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48A6F6B4-3641-48B2-948C-8BA0E2A426B7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{48A6F6B4-3641-48B2-948C-8BA0E2A426B7}.DebugLinkSdk|Any CPU.ActiveCfg = DebugLinkSdk|Any CPU
+		{48A6F6B4-3641-48B2-948C-8BA0E2A426B7}.DebugLinkSdk|Any CPU.Build.0 = DebugLinkSdk|Any CPU
+		{48A6F6B4-3641-48B2-948C-8BA0E2A426B7}.DebugLinkSdkAndUser|Any CPU.ActiveCfg = DebugLinkSdkAndUser|Any CPU
+		{48A6F6B4-3641-48B2-948C-8BA0E2A426B7}.DebugLinkSdkAndUser|Any CPU.Build.0 = DebugLinkSdkAndUser|Any CPU
 		{48A6F6B4-3641-48B2-948C-8BA0E2A426B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48A6F6B4-3641-48B2-948C-8BA0E2A426B7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{48A6F6B4-3641-48B2-948C-8BA0E2A426B7}.Release|Any CPU.Deploy.0 = Release|Any CPU
