@@ -10,9 +10,9 @@ namespace Linker.Utilities
     // [Preserve(AllMembers = true)]
     public class StringUtilities
     {
-        public string ReverseString(string textToRevert)
+        public string ReverseString(string textToReverse)
         {
-            return new string(textToRevert?.Reverse().ToArray());
+            return new string(textToReverse?.Reverse().ToArray());
         }
     }
 }
