@@ -7,6 +7,9 @@
             android:targetSdkVersion="28" />
   <application android:label="Linker.Android"></application>
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <!-- MK Adding the below entry as per the current issue with D8-R8
+          https://github.com/xamarin/xamarin-android/issues/2670
+  -->
   <uses-library android:name="org.apache.http.legacy"
                 android:required="false" />
 </manifest>
