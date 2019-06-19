@@ -156,5 +156,16 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </LinkDescription>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="DotfuscatorConfig.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <PropertyGroup>
+    <DotfuscatorXamarinConfigFileName>DotfuscatorConfig.xml</DotfuscatorXamarinConfigFileName>
+    <DotfuscatorXamarinCliPath>C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Extensions\PreEmptiveSolutions\DotfuscatorCE\dotfuscatorCLI.exe</DotfuscatorXamarinCliPath>
+    <DotfuscatorXamarinGenerateNewConfigFile>true</DotfuscatorXamarinGenerateNewConfigFile>
+    <!-- Enable Dotfuscator for Debug -->
+    <DotfuscatorXamarinEnabled Condition="'$(Configuration)' == 'Debug'">true</DotfuscatorXamarinEnabled>
+  </PropertyGroup>
+  <Import Project="../Dotfuscator/PreEmptive.Dotfuscator.Xamarin.Targets" />
 </Project>

@@ -10,6 +10,8 @@ namespace Linker.Utilities
     // [Preserve(AllMembers = true)]
     public class StringUtilities
     {
+        private bool testIfThisFieldNamesGetsObfuscated = true;
+
         public string ReverseString(string textToReverse)
         {
             return new string(textToReverse?.Reverse().ToArray());
